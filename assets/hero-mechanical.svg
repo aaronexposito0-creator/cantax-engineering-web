@@ -1,0 +1,17 @@
+<svg viewBox="0 0 650 540" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Illustrative isometric mechanical assembly">
+ <defs><linearGradient id="a" x1="0" x2="1" y1="0" y2="1"><stop stop-color="#92bccc"/><stop offset=".48" stop-color="#34637b"/><stop offset="1" stop-color="#17384b"/></linearGradient><linearGradient id="b" x1="0" x2="0" y1="0" y2="1"><stop stop-color="#7dc8c8"/><stop offset="1" stop-color="#19677b"/></linearGradient><pattern id="g" width="36" height="36" patternUnits="userSpaceOnUse"><path d="M36 0H0V36" fill="none" stroke="#86b3c2" stroke-opacity=".075"/></pattern></defs>
+ <rect width="650" height="540" fill="url(#g)"/><g stroke="#4d91a2" stroke-width="1" opacity=".43" fill="none"><circle cx="325" cy="276" r="196" stroke-dasharray="8 10"/><circle cx="325" cy="276" r="236" stroke-dasharray="3 8"/><path d="M0 276H650M325 0V540" stroke-dasharray="7 10"/><path d="M156 93 497 450M496 96 158 448" stroke-dasharray="4 12"/></g>
+ <g class="assembly-parts lower-part">
+ <path d="M139 287 322 181 511 283 328 397Z" fill="#3d697d" stroke="#b8e0e5" stroke-width="2.5"/><path d="M139 287v73l189 107v-70Z" fill="#224c64" stroke="#85c3d0" stroke-width="2.5"/><path d="M328 397v70l183-106v-78Z" fill="#113248" stroke="#85c3d0" stroke-width="2.5"/>
+ <path d="M180 280 326 200 469 284 328 366Z" fill="#17354b" stroke="#5dbcc3" stroke-width="1.5"/>
+ <ellipse cx="326" cy="284" rx="100" ry="55" fill="#0b2639" stroke="#72cfc9" stroke-width="2"/><ellipse cx="326" cy="284" rx="55" ry="27" fill="#336b78" stroke="#b5dfe4" stroke-width="1.3"/><ellipse cx="326" cy="284" rx="28" ry="13" fill="#0e2537" stroke="#5dbcc3"/>
+ <g fill="#071f33" stroke="#9bd5da" stroke-width="1.8"><ellipse cx="186" cy="293" rx="11" ry="6"/><ellipse cx="462" cy="297" rx="11" ry="6"/><ellipse cx="333" cy="427" rx="11" ry="6"/></g>
+ </g>
+ <g class="assembly-parts upper-part">
+ <path d="M230 223v-64c0-21 42-37 96-37s96 16 96 37v64" fill="url(#a)" stroke="#91c9d1" stroke-width="2.3"/><ellipse cx="326" cy="160" rx="96" ry="39" fill="#37677a" stroke="#b9e4e2" stroke-width="2"/><ellipse cx="326" cy="160" rx="65" ry="26" fill="#0a283d" stroke="#64c7bd" stroke-width="2"/><ellipse cx="326" cy="160" rx="34" ry="13" fill="#2d5568" stroke="#acdcd9" stroke-width="1.5"/>
+ <path d="M233 170c15 34 60 47 93 47 39 0 74-17 96-47" fill="none" stroke="#9de3da" stroke-opacity=".65" stroke-width="1.5"/><path d="M247 189v28M405 190v27" stroke="#7ee3d8" stroke-width="2"/>
+ </g>
+ <g class="assembly-parts shaft-part"><path d="M296 144V87c0-5 13-12 30-12s30 7 30 12v57" fill="url(#b)" stroke="#b5e2e6" stroke-width="1.5"/><ellipse cx="326" cy="86" rx="30" ry="12" fill="#285d70" stroke="#b5e2e6" stroke-width="1.5"/><ellipse cx="326" cy="86" rx="11" ry="5" fill="#102838" stroke="#65d6c7" stroke-width="1.4"/></g>
+ <g stroke="#8bc6ce" stroke-width="1" opacity=".76" fill="none"><path d="M119 160V82M530 188V80M120 89h410M114 83l6 6-6 6M536 83l-6 6 6 6"/><path d="M561 201h36v231h-36M591 207l6-6 6 6M591 425l6 7 6-7"/></g>
+ <g font-family="Consolas,monospace" font-size="12" fill="#b0d6db"><text x="235" y="76">ISOMETRIC / STUDY 01</text><text x="546" y="321" transform="rotate(90 546 321)">DESIGN INTENT ONLY</text><text x="32" y="499">CX–CAD / CONCEPTUAL VISUAL</text><text x="476" y="498">REV A</text></g><g stroke="#9de4dc" stroke-width="2"><path d="M62 54h28M76 40v28M572 470h28M586 456v28"/></g>
+</svg>
