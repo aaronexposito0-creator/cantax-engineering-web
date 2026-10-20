@@ -19,9 +19,9 @@
 <rect x="278.95" y="391.35" width="220.1" height="27.900000000000002" fill="white" stroke="none"/><path d="M278.95 391.35H499.05 A13.950000000000001 13.950000000000001 0 0 1 499.05 419.25 H278.95 A13.950000000000001 13.950000000000001 0 0 1 278.95 391.35Z" fill="white" stroke="#05687f" stroke-width="2"/>
 <path d="M110 520V598 M668 520V598 M110 590H668" fill="none" stroke="#687c91" stroke-width="1.5"/><path d="M110 590l10 -4v8z M668 590l-10 -4v8z" fill="#687c91"/><text x="371" y="578" font-family="Inter,Arial,sans-serif" font-size="20" font-weight="600" fill="#163e55">180</text>
 <path d="M110 210H62 M110 520H62 M70 210V520" fill="none" stroke="#687c91" stroke-width="1.5"/><path d="M70 210l-4 10h8z M70 520l-4 -10h8z" fill="#687c91"/><text x="32" y="365" font-family="Inter,Arial,sans-serif" font-size="19" font-weight="600" fill="#163e55">100</text>
-<text x="100" y="590" font-family="Inter,Arial,sans-serif" font-size="19" font-weight="600" fill="#163e55">4 × Ø6.6   •   2 × (80 × 9) SLOT   •   R8   •   t = 8</text>
-<text x="100" y="618" font-family="Inter,Arial,sans-serif" font-size="17" font-weight="400" fill="#163e55">Slot centres: (90,37) and (90,63)</text>
-<text x="100" y="645" font-family="Inter,Arial,sans-serif" font-size="16" font-weight="400" fill="#163e55">Chassis holes: (20,12), (160,12), (20,88), (160,88)</text>
+<text x="100" y="621" font-family="Inter,Arial,sans-serif" font-size="19" font-weight="600" fill="#163e55">4 × Ø6.6   •   2 × (80 × 9) SLOT   •   R8   •   t = 8</text>
+<text x="100" y="650" font-family="Inter,Arial,sans-serif" font-size="17" font-weight="400" fill="#163e55">Slot centres: (90,37) and (90,63)</text>
+<text x="100" y="680" font-family="Inter,Arial,sans-serif" font-size="16" font-weight="400" fill="#163e55">Chassis holes: (20,12), (160,12), (20,88), (160,88)</text>
 <text x="810" y="160" font-family="Inter,Arial,sans-serif" font-size="25" font-weight="700" fill="#163e55">CX01-002  /  CARRIAGE</text>
 <rect x="815" y="265" width="357" height="252" rx="21" fill="#f7fbfd" stroke="#147590" stroke-width="3"/>
 <circle cx="993.5" cy="336.4" r="18.900000000000002" fill="#fff" stroke="#05687f" stroke-width="2"/><path d="M983.5 336.4h20 M993.5 326.4v20" stroke="#81b5c3" stroke-width=".8" stroke-dasharray="3 3"/>
