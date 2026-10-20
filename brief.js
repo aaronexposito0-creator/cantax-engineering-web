@@ -29,47 +29,59 @@
   }
   document.getElementById('brief-copy').addEventListener('click',async()=>{try{if(navigator.clipboard?.writeText)await navigator.clipboard.writeText(briefText);else{const t=document.createElement('textarea');t.value=briefText;document.body.appendChild(t);t.select();document.execCommand('copy');t.remove();}msg('Enquiry copied to clipboard.');}catch{msg('Copy was blocked by your browser. Use Download to save the text.');}});
   document.getElementById('brief-download').addEventListener('click',()=>{const blob=new Blob([briefText],{type:'text/plain;charset=utf-8'});const u=URL.createObjectURL(blob);const a=document.createElement('a');a.href=u;a.download='CantaX-project-enquiry.txt';document.body.appendChild(a);a.click();a.remove();setTimeout(()=>URL.revokeObjectURL(u),2000);msg('Your enquiry was downloaded. No data was sent.');});
+  // Online intake is OFF until the studio obtains a Web3Forms access key and
+  // verifies the first genuine delivery. Its access key is public by design.
+  const onlineKey=String(window.CANTAX_WEB3FORMS_ACCESS_KEY||'').trim();
+  const onlineReady=/^[a-zA-Z0-9-]{16,100}$/.test(onlineKey);
+  const onlineControls=document.getElementById('brief-online-controls');
+  const unavailable=document.getElementById('brief-online-unavailable');
+  if(onlineControls)onlineControls.hidden=!onlineReady;
+  if(unavailable)unavailable.hidden=onlineReady;
   const onlineButton=document.getElementById('brief-send-online');
-  if(onlineButton){
-    onlineButton.addEventListener('click',()=>{
+  if(onlineButton && onlineReady){
+    onlineButton.addEventListener('click',async()=>{
       const consent=document.getElementById('brief-online-consent');
-      const alert=document.getElementById('brief-online-status');
-      if(!consent.checked){alert.textContent='Please read and acknowledge the external delivery and privacy notice before sending.';alert.hidden=false;consent.focus();return;}
-      const emailField=document.getElementById('contactEmail');
-      const nameField=document.getElementById('contactName');
-      const descriptionField=form.elements.namedItem('description');
-      if(!emailField.checkValidity()||!nameField.checkValidity()||descriptionField.value.trim().length<20){
-        alert.textContent='Some required contact or project details are missing. Go back and check the information.';alert.hidden=false;return;
+      const notice=document.getElementById('brief-online-status');
+      const show=(t)=>{notice.textContent=t;notice.hidden=false;};
+      if(!consent.checked){show('Please read the privacy notice and check the consent box.');consent.focus();return;}
+      if(!form.elements.namedItem('description').value.trim() || !document.getElementById('contactName').checkValidity() || !document.getElementById('contactEmail').checkValidity()){
+        show('Your contact details or project description are incomplete. Please go back and check them.');return;
       }
-      // A plain HTTPS POST to the no-cost external form relay. A CantaX inbox
-      // confirmation is required once before delivery can be considered live.
-      const relay=document.createElement('form');
-      relay.method='POST';
-      relay.action='https://formsubmit.co/cantaxengineering@gmail.com';
-      relay.acceptCharset='UTF-8';
-      relay.style.display='none';
-      const fields={
-        _subject:'CantaX Engineering — project enquiry: '+value('service').slice(0,100),
-        _template:'table',
-        _captcha:'true',
+      const data={
+        access_key:onlineKey,
+        subject:'CantaX Engineering — '+value('service').slice(0,100),
+        from_name:'CantaX website project enquiry',
         name:value('contactName').slice(0,150),
-        email:value('contactEmail').slice(0,200),
-        company:value('company').slice(0,200),
+        email:value('contactEmail').slice(0,180),
+        company:value('company').slice(0,160),
         country:value('country').slice(0,120),
         service:value('service').slice(0,100),
-        application:value('application').slice(0,120),
-        formats:value('formats').slice(0,120),
-        timeline:value('timeline').slice(0,120),
-        description:value('description').slice(0,6000),
-        constraints:value('constraints').slice(0,3000),
-        privacy_acknowledgement:'Acknowledged external FormSubmit delivery'
+        application:value('application').slice(0,100),
+        formats:value('formats').slice(0,100),
+        timeline:value('timeline').slice(0,100),
+        message:generate().slice(0,6500),
+        botcheck:''
       };
-      for(const [name,val] of Object.entries(fields)){
-        const input=document.createElement('input');input.type='hidden';input.name=name;input.value=val;relay.appendChild(input);
+      onlineButton.disabled=true;
+      show('Submitting your enquiry securely…');
+      try{
+        const controller=new AbortController();
+        const timer=setTimeout(()=>controller.abort(),15000);
+        let response;
+        try{
+          response=await fetch('https://api.web3forms.com/submit',{
+            method:'POST',headers:{'Content-Type':'application/json','Accept':'application/json'},
+            body:JSON.stringify(data),signal:controller.signal
+          });
+        }finally{clearTimeout(timer);}
+        const answer=await response.json();
+        if(!response.ok||!answer.success)throw new Error('The delivery provider could not accept the request.');
+        show('Your enquiry was accepted by the submission service. Please retain a copy. Email delivery to CantaX may still require confirmation.');
+        onlineButton.textContent='Submitted to provider ✓';
+      }catch{
+        show('Online submission could not be confirmed. Your details are still on this page; please use “Open email app” or “Copy enquiry” instead.');
+        onlineButton.disabled=false;
       }
-      document.body.appendChild(relay);
-      alert.textContent='Opening the secure FormSubmit submission page. A confirmation here does not mean the email was delivered.';alert.hidden=false;
-      relay.submit();
     });
   }
   display(0);
