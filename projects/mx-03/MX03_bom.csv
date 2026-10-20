@@ -1,0 +1,10 @@
+ID,Name,Quantity,Proposed material,Engineering status
+MX03-001,Welded deck interface frame 1250x900,1,EN 10025 S355 concept section,No weld design or deck-interface approval
+MX03-002,Pivot support cheeks,2,Steel plate nominal,Unverified geometry and welded attachment
+MX03-003,Pivot shaft 30 mm nominal,1,Corrosion-resistant alloy to specify,Fit and material selection pending
+MX03-004,Rectangular hollow arm 1600,1,Steel or suitable aluminium pending load selection,No beam/load sizing done
+MX03-005,Instrument interface plate,1,Aluminium 200x160x12 nominal,Client pattern and isolation TBD
+MX03-006,Pivot bearings / bushings,2,Manufacturer component TBD,Selection pending
+MX03-007,Locking / parking mechanism,1 assembly,TBD,Not designed: required before field use
+MX03-008,Cable guide and protected junction,1 assembly,TBD,Concept only no sealing class claimed
+MX03-009,Mounting feet / deck brackets,4,Project-specific,Deck structural interface TBD
