@@ -31,18 +31,21 @@ Then visit `http://localhost:8000/`.
 
 The `brief.html` wizard offers four routes:
 
-1. **Send enquiry online** — after the visitor reads and acknowledges the privacy notice, posts the project description and contact details to external relay **FormSubmit** using HTTPS. It sends the information to the public inbox above once the mailbox-owner has activated the endpoint via FormSubmit's confirmation email. **Activation and end-to-end mail delivery have not yet been verified**.
+1. **Send enquiry online** — disabled by default. Web3Forms may be activated only after the owner registers the public access key and verifies the resulting email to CantaX. Free plan currently advertises 250 submissions/month; limits and terms may change.
 2. **Open email app** — constructs a `mailto:` draft; the visitor must still send it.
 3. **Copy enquiry** — clipboard only.
 4. **Download .txt** — local file only.
 
 The web site itself has no server database or file-upload mechanism. Do not ask customers to submit proprietary CAD files or confidential designs via a public form. If real engineering work begins, establish a separate secure file exchange and confidentiality terms.
 
-### One-time FormSubmit activation
+### One-time Web3Forms setup
 
-Using **fictional nonconfidential** test data, go to `brief.html`, complete the wizard, acknowledge external processing and choose **Send enquiry online**. FormSubmit may present a CAPTCHA and will send an activation email to `cantaxengineering@gmail.com`. The mailbox owner must personally open and approve that confirmation message. **Then send a second test enquiry** and verify that it actually arrives.
+1. The inbox owner goes to https://web3forms.com/ and requests a free access key for `cantaxengineering@gmail.com`. This requires a message sent to the inbox.
+2. Once received, add the **public** key to `window.CANTAX_WEB3FORMS_ACCESS_KEY` in `site-config.js` and push to GitHub. The web app will then display the online-send option.
+3. Use test details with no sensitive or third-party information and submit once. Check both Web3Forms response and actual inbox receipt. If nothing arrives, **disable the online option again** while diagnosing.
+4. Confirm that production website legal notices and GDPR documentation accurately describe the external provider.
 
-If the activation email is missing, check Spam or contact FormSubmit support. Until that is complete, do not advertise online delivery as tested.
+Until tested, only the existing email-app link is known to open a draft successfully; no direct online delivery is guaranteed.
 
 ## Recommended no-cost business hosting
 
