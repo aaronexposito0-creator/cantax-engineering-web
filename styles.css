@@ -48,3 +48,16 @@ h1,h2,h3,h4,p{margin-top:0}h1,h2,h3{letter-spacing:-.047em;line-height:1.06;font
 .online-consent input{width:18px;height:18px;margin:2px 0 0;flex-shrink:0;accent-color:#0fae9e}
 .online-enquiry #brief-online-status{margin:12px 0 0}
 @media(max-width:580px){.online-enquiry{padding:18px}.online-enquiry .btn{max-width:100%;width:100%;justify-content:center}}
+
+/* Clearly scoped service offers: no unverified guarantees or fixed fees. */
+.engagement-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:20px;margin-top:28px}
+.engagement-card{border:1px solid #c7d9e1;background:#f9fcfd;padding:28px;display:flex;flex-direction:column;gap:16px;min-height:270px}
+.engagement-card>span{font-size:11px;color:#098b87;letter-spacing:.09em;font-weight:750}
+.engagement-card h3{margin:0;font-size:26px;line-height:1.15;color:#092e45}
+.engagement-card p{font-size:15px;line-height:1.55;color:#496575;margin:0;flex:1}
+.engagement-card strong{font-size:12px;color:#1f4b59}
+.engagement-card a{font-size:14px;font-weight:800;color:#047f78;text-underline-offset:4px}
+.engagement-card a:hover{color:#032d4c}
+.engagement-note{background:#e9f4f4;border-left:4px solid #0c9e97;margin-top:24px;padding:18px 21px;color:#234e5d;line-height:1.6;font-size:14px}
+@media(max-width:880px){.engagement-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:560px){.engagement-grid{grid-template-columns:1fr}.engagement-card{min-height:220px}}
