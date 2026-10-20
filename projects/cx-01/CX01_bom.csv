@@ -1,0 +1,6 @@
+Item,Part number,Description,Qty,Material,Nominal spec,Supply status
+1,CX01-001,Base plate,1,EN AW-6082 T6,180 x 100 x 8 mm R8; 4x Ø6.6; 2x 80 x 9 slots,Custom fabricated (demonstration)
+2,CX01-002,Sliding carriage,1,EN AW-6082 T6,85 x 60 x 6 mm R5; 2x Ø9; 2x Ø6.6,Custom fabricated (demonstration)
+3,CX01-H01,M8 screw,2,Steel A2-70,M8 x 30 ISO 4762,Off-the-shelf illustrative
+4,CX01-H02,M8 washer,4,Steel A2,ISO 7089 M8 (OD 16 nominal),Off-the-shelf illustrative
+5,CX01-H03,M8 hex nut,2,Steel A2,ISO 4032 M8,Off-the-shelf illustrative
