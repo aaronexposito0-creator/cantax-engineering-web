@@ -54,5 +54,5 @@
     if(valid){a.href='mailto:'+contact;a.textContent=contact;}
     else{a.textContent='Contact address to be confirmed';a.removeAttribute('href');a.classList.add('pending');}
   });
-  document.querySelectorAll('[data-contact-availability]').forEach(e=>{e.textContent=valid?'Contact email is configured.':'Contact email will be enabled after verification.';});
+  document.querySelectorAll('[data-contact-availability]').forEach(e=>{e.textContent=valid?contact:'Contact email is currently unavailable.';});
 })();
