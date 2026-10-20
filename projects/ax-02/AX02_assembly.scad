@@ -17,7 +17,7 @@ module guiding(){
  color([0.76,0.83,0.84])alongX(30,y,railZ,260,railD);
  for(x=[30,290])color([0.24,0.34,0.38])
  translate([x-9,y-14,baseT])cube([18,28,13]);
- for(x=[112+travel-42,112+travel+42])
+ for(x=[160+travel-42,160+travel+42])
  color([0.32,0.44,0.50])translate([x-17,y-18,railZ-11+zoff])cube([34,36,22]);
  }}
 module screw(){
