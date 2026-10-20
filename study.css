@@ -1,0 +1,40 @@
+/* CantaX technical concept studies · independent original design */
+.studio-case .study-hero{background:radial-gradient(circle at 80% 40%,#164356 0%,#081b2d 68%)}
+.study-hero .eyebrow{display:block;margin-top:26px}
+.study-tag-list{display:flex;gap:9px;flex-wrap:wrap;margin:30px 0 0}
+.study-tag-list span{border:1px solid #5c97a6;padding:9px 12px;font-size:11px;letter-spacing:.09em;color:#c4ebe9}
+.study-layout{display:grid;grid-template-columns:minmax(0,1.7fr) minmax(310px,1fr);gap:28px}
+.study-display{background:#0c293e;border:1px solid #335c70;min-width:0}
+.study-stage-heading{display:flex;justify-content:space-between;gap:15px;padding:19px 20px;color:#c4ebf0;font-size:12px;letter-spacing:.06em}
+.study-svg svg{width:100%;height:auto;display:block}
+.study-controller{background:#123347;padding:19px 24px 23px;color:#d9f1f4}
+.study-slider-label{display:flex;justify-content:space-between;gap:12px;font-weight:700}
+.study-slider-label output{color:#59e4cf;font-variant-numeric:tabular-nums}
+.study-controller input[type="range"]{width:100%;margin:20px 0 12px;accent-color:#11b7a9;cursor:pointer}
+.study-slider-ends{display:flex;justify-content:space-between;gap:14px;align-items:center;font-size:12px}
+.study-slider-ends button{padding:8px 18px;color:white;border:1px solid #799ba8;background:transparent;cursor:pointer;border-radius:4px}
+.study-slider-ends button:focus-visible{outline:3px solid #82e1d3;outline-offset:3px}
+.study-calculated{border-top:1px solid #446678;margin:20px 0 0;padding-top:14px;font-size:14px;display:flex;justify-content:space-between;gap:12px}
+.study-calculated strong{color:#65e0d6;font-variant-numeric:tabular-nums}
+.study-snapshot{background:#f3f8fa;border:1px solid #d1dfe6;padding:32px}
+.study-snapshot h2{font-size:30px;line-height:1.13;margin:15px 0}
+.study-snapshot p{font-size:15px;line-height:1.55;color:#43596c}
+.study-snapshot dl{margin:25px 0}
+.study-snapshot dl div{display:flex;gap:15px;justify-content:space-between;border-top:1px solid #d4e1e6;padding:12px 0}
+.study-snapshot dt{font-size:12px;color:#536d7a}
+.study-snapshot dd{margin:0;text-align:right;font-size:12px;font-weight:750;color:#173c4b;max-width:52%}
+.study-snapshot .btn{display:block;text-align:center}
+.study-files{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:15px}
+.study-download{padding:23px;background:white;border:1px solid #c8dbe4;display:flex;flex-direction:column;gap:11px;text-decoration:none;color:#0d3249;min-height:195px}
+.study-download:hover,.study-download:focus-visible{border-color:#0aaea4;box-shadow:0 8px 28px rgba(4,66,99,.12)}
+.study-file-label{font-size:11px;letter-spacing:.09em;color:#088b8c;font-weight:800}
+.study-download strong{font-size:17px;overflow-wrap:anywhere}
+.study-download small{font-size:13px;line-height:1.45;color:#577180;flex:1}
+.study-download-arrow{font-size:13px;font-weight:700}
+.study-concept-note{margin-top:28px;padding:19px;background:#eaf3f5;border-left:4px solid #07998f;font-size:15px;color:#193648;line-height:1.5}
+.study-risks{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px}
+.study-risks>div{border:1px solid #d1e0e6;padding:22px;background:#f7fafb;display:flex;gap:16px;align-items:flex-start}
+.study-risks span{color:#099c94;font-weight:800}
+.study-risks p{margin:0;font-size:15px;line-height:1.55}
+@media(max-width:900px){.study-layout{grid-template-columns:1fr}.study-files,.study-risks{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:580px){.study-files,.study-risks{grid-template-columns:1fr}.study-snapshot{padding:22px}.study-controller{padding:16px}.study-tag-list span{font-size:10px}.study-hero h1{font-size:clamp(36px,9vw,64px)}}
