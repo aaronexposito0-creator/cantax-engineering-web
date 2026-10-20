@@ -1,0 +1,38 @@
+/* CX-01 editorial case study / CantaX Engineering */
+.cx01-page .page-hero{background:radial-gradient(circle at 85% 45%,#0f4860 0%,#071b2b 65%)}
+.cx01-hero-tags{display:flex;flex-wrap:wrap;gap:12px;margin-top:26px}
+.cx01-hero-tags span{border:1px solid rgba(129,212,218,.45);border-radius:2px;color:#9fe4d7;padding:9px 12px;font-size:11px;font-weight:700;letter-spacing:.11em}
+.cx01-grid{display:grid;grid-template-columns:minmax(0,1.65fr) minmax(285px,1fr);gap:32px;align-items:stretch}
+.cx01-live{background:#091d30;border:1px solid #335b6e;overflow:hidden}
+.cx01-topline{display:flex;justify-content:space-between;gap:15px;padding:19px 20px;border-bottom:1px solid #2d5464;color:#a5d6df;font-size:12px;letter-spacing:.08em}
+.cx01-assembly{width:100%;display:block;aspect-ratio:690/400}
+.cx01-live-controls{background:#0f2b3e;padding:21px 24px 26px;color:#d9eff3}
+.cx01-live-controls label{display:flex;justify-content:space-between;align-items:center;gap:10px;font-size:15px;font-weight:600}
+.cx01-live-controls output{color:#70e1d1;font-variant-numeric:tabular-nums}
+.cx01-live-controls input{width:100%;margin:22px 0 10px;accent-color:#1ab8ab;cursor:pointer}
+.cx01-extents{display:flex;justify-content:space-between;align-items:center;font-size:12px;color:#b5ced5;gap:10px}
+.cx01-extents button{background:transparent;border:1px solid #62818e;border-radius:4px;padding:7px 11px;color:white;font:inherit;cursor:pointer}
+.cx01-extents button:focus-visible{outline:2px solid #70e1d1}
+.cx01-spec{background:#f2f7f9;border:1px solid #d2dfe5;padding:32px}
+.cx01-spec h3{font-size:29px;line-height:1.12;margin:16px 0}
+.cx01-spec p{font-size:15px;color:#476073;line-height:1.6}
+.cx01-spec dl{margin:22px 0}
+.cx01-spec dl div{border-top:1px solid #d2dfe5;padding:11px 0;display:flex;justify-content:space-between;gap:16px}
+.cx01-spec dt{font-size:13px;color:#647788}
+.cx01-spec dd{margin:0;font-size:13px;font-weight:700;text-align:right;color:#0b263b}
+.cx01-primary{background:#083147;display:block;color:white;text-decoration:none;padding:17px 20px;font-size:14px;font-weight:700;text-align:center}
+.cx01-primary:hover{background:#0a5962}
+.cx01-downloads{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:15px}
+.cx01-downloads a{display:flex;flex-direction:column;gap:12px;padding:24px;min-height:175px;background:white;border:1px solid #ccdce4;text-decoration:none;color:#153348}
+.cx01-downloads a:hover,.cx01-downloads a:focus-visible{border-color:#13a99b;box-shadow:0 5px 26px rgba(4,70,100,.12)}
+.cx01-downloads strong{font-size:13px;letter-spacing:.06em;color:#087f84}
+.cx01-downloads span{line-height:1.45;font-size:14px;flex:1;color:#405567}
+.cx01-downloads b{font-size:12px}
+.cx01-drawing{margin-top:25px;background:white;border:1px solid #b6cbd4;padding:15px}
+.cx01-drawing img{width:100%;height:auto;display:block}
+.cx01-principles{display:grid;grid-template-columns:1fr 1fr;gap:50px;align-items:start}
+.cx01-boundaries{padding:27px;background:#f2f7f9;border-left:4px solid #0aa89c}
+.cx01-boundaries h3{margin:0 0 12px}
+.cx01-boundaries li{margin:8px 0;color:#32495c;line-height:1.55}
+@media(max-width:860px){.cx01-grid{grid-template-columns:1fr}.cx01-downloads{grid-template-columns:repeat(2,minmax(0,1fr))}.cx01-principles{grid-template-columns:1fr}}
+@media(max-width:550px){.cx01-downloads{grid-template-columns:1fr}.cx01-spec{padding:21px}.cx01-hero-tags{gap:6px}.cx01-hero-tags span{font-size:9px;padding:7px}.cx01-live-controls{padding:16px}.cx01-downloads a{min-height:auto}}
