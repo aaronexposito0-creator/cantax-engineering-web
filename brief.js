@@ -32,7 +32,9 @@
   // Online intake is OFF until the studio obtains a Web3Forms access key and
   // verifies the first genuine delivery. Its access key is public by design.
   const onlineKey=String(window.CANTAX_WEB3FORMS_ACCESS_KEY||'').trim();
-  const onlineReady=/^[a-zA-Z0-9-]{16,100}$/.test(onlineKey);
+  const onlineReady=window.CANTAX_WEB3FORMS_DELIVERY_VERIFIED===true && /^[a-zA-Z0-9-]{16,100}$/.test(onlineKey);
+  const onlinePanel=document.getElementById('online-enquiry');
+  if(onlinePanel)onlinePanel.hidden=!onlineReady;
   const onlineControls=document.getElementById('brief-online-controls');
   const unavailable=document.getElementById('brief-online-unavailable');
   if(onlineControls)onlineControls.hidden=!onlineReady;
