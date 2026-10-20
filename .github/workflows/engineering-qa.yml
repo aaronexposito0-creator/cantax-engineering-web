@@ -1,0 +1,24 @@
+name: Engineering demonstrations QA
+on:
+  push:
+    branches: [main]
+  pull_request:
+permissions:
+  contents: read
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Validate independent engineering calculations
+        run: |
+          node --check ts05.js
+          node --check bom-tool.js
+          node projects/ts-05/tests.js
+          node projects/dt-04/bom-tests.js
+          node projects/ax-02/AX02_verify.js
+          node projects/mx-03/MX03_verify.js
+          node projects/cx-01/CX01_checks.js
