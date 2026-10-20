@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1300 900" role="img" aria-labelledby="dwtitle dwdesc">
+<title id="dwtitle">CX-01 revision A dimension reference: adjustable instrument mounting fixture</title>
+<desc id="dwdesc">Vector reference drawing with base plate 180 by 100 mm, carriage 85 by 60 mm, dimensions and hole coordinates. This is a concept study, not a signed manufacturing drawing.</desc>
+<rect width="1300" height="900" fill="#eff5f8"/>
+<rect x="24" y="24" width="1252" height="852" fill="white" stroke="#b2c7d2" stroke-width="2"/>
+<rect x="24" y="24" width="1252" height="92" fill="#0a2237"/>
+<text x="55" y="70" font-family="Inter,Arial,sans-serif" font-size="28" font-weight="700" fill="#d8f8f5">CantaX  /  ENGINEERING</text>
+<text x="55" y="100" font-family="Inter,Arial,sans-serif" font-size="19" font-weight="500" fill="#70ddd2">CX-01  ADJUSTABLE INSTRUMENT MOUNT — REV A</text>
+<text x="830" y="72" font-family="Inter,Arial,sans-serif" font-size="18" font-weight="600" fill="#b9d0dd">TECHNICAL REFERENCE / MILLIMETRES</text>
+<text x="830" y="100" font-family="Inter,Arial,sans-serif" font-size="16" font-weight="500" fill="#f7ca8b">CONCEPT STAGE · NOT LOAD-RATED</text>
+
+<text x="100" y="160" font-family="Inter,Arial,sans-serif" font-size="25" font-weight="700" fill="#163e55">CX01-001  /  BASE PLATE</text>
+<rect x="110" y="210" width="558" height="310" rx="24.8" fill="#f7fbfd" stroke="#147590" stroke-width="3"/>
+<circle cx="172" cy="247.2" r="10.23" fill="#fff" stroke="#05687f" stroke-width="2"/><path d="M162 247.2h20 M172 237.2v20" stroke="#81b5c3" stroke-width=".8" stroke-dasharray="3 3"/>
+<circle cx="606" cy="247.2" r="10.23" fill="#fff" stroke="#05687f" stroke-width="2"/><path d="M596 247.2h20 M606 237.2v20" stroke="#81b5c3" stroke-width=".8" stroke-dasharray="3 3"/>
+<circle cx="172" cy="482.8" r="10.23" fill="#fff" stroke="#05687f" stroke-width="2"/><path d="M162 482.8h20 M172 472.8v20" stroke="#81b5c3" stroke-width=".8" stroke-dasharray="3 3"/>
+<circle cx="606" cy="482.8" r="10.23" fill="#fff" stroke="#05687f" stroke-width="2"/><path d="M596 482.8h20 M606 472.8v20" stroke="#81b5c3" stroke-width=".8" stroke-dasharray="3 3"/>
+<rect x="278.95" y="310.75" width="220.1" height="27.900000000000002" fill="white" stroke="none"/><path d="M278.95 310.75H499.05 A13.950000000000001 13.950000000000001 0 0 1 499.05 338.65 H278.95 A13.950000000000001 13.950000000000001 0 0 1 278.95 310.75Z" fill="white" stroke="#05687f" stroke-width="2"/>
+<rect x="278.95" y="391.35" width="220.1" height="27.900000000000002" fill="white" stroke="none"/><path d="M278.95 391.35H499.05 A13.950000000000001 13.950000000000001 0 0 1 499.05 419.25 H278.95 A13.950000000000001 13.950000000000001 0 0 1 278.95 391.35Z" fill="white" stroke="#05687f" stroke-width="2"/>
+<path d="M110 520V598 M668 520V598 M110 590H668" fill="none" stroke="#687c91" stroke-width="1.5"/><path d="M110 590l10 -4v8z M668 590l-10 -4v8z" fill="#687c91"/><text x="371" y="578" font-family="Inter,Arial,sans-serif" font-size="20" font-weight="600" fill="#163e55">180</text>
+<path d="M110 210H62 M110 520H62 M70 210V520" fill="none" stroke="#687c91" stroke-width="1.5"/><path d="M70 210l-4 10h8z M70 520l-4 -10h8z" fill="#687c91"/><text x="32" y="365" font-family="Inter,Arial,sans-serif" font-size="19" font-weight="600" fill="#163e55">100</text>
+<text x="100" y="590" font-family="Inter,Arial,sans-serif" font-size="19" font-weight="600" fill="#163e55">4 × Ø6.6   •   2 × (80 × 9) SLOT   •   R8   •   t = 8</text>
+<text x="100" y="618" font-family="Inter,Arial,sans-serif" font-size="17" font-weight="400" fill="#163e55">Slot centres: (90,37) and (90,63)</text>
+<text x="100" y="645" font-family="Inter,Arial,sans-serif" font-size="16" font-weight="400" fill="#163e55">Chassis holes: (20,12), (160,12), (20,88), (160,88)</text>
+<text x="810" y="160" font-family="Inter,Arial,sans-serif" font-size="25" font-weight="700" fill="#163e55">CX01-002  /  CARRIAGE</text>
+<rect x="815" y="265" width="357" height="252" rx="21" fill="#f7fbfd" stroke="#147590" stroke-width="3"/>
+<circle cx="993.5" cy="336.4" r="18.900000000000002" fill="#fff" stroke="#05687f" stroke-width="2"/><path d="M983.5 336.4h20 M993.5 326.4v20" stroke="#81b5c3" stroke-width=".8" stroke-dasharray="3 3"/>
+<circle cx="993.5" cy="445.6" r="18.900000000000002" fill="#fff" stroke="#05687f" stroke-width="2"/><path d="M983.5 445.6h20 M993.5 435.6v20" stroke="#81b5c3" stroke-width=".8" stroke-dasharray="3 3"/>
+<circle cx="920" cy="391" r="13.86" fill="#fff" stroke="#05687f" stroke-width="2"/><path d="M910 391h20 M920 381v20" stroke="#81b5c3" stroke-width=".8" stroke-dasharray="3 3"/>
+<circle cx="1067" cy="391" r="13.86" fill="#fff" stroke="#05687f" stroke-width="2"/><path d="M1057 391h20 M1067 381v20" stroke="#81b5c3" stroke-width=".8" stroke-dasharray="3 3"/>
+<path d="M815 517V585 M1172 517V585 M815 577H1172" fill="none" stroke="#687c91" stroke-width="1.5"/><path d="M815 577l10 -4v8z M1172 577l-10 -4v8z" fill="#687c91"/><text x="975.5" y="565" font-family="Inter,Arial,sans-serif" font-size="20" font-weight="600" fill="#163e55">85</text>
+<path d="M815 265H762 M815 517H762 M770 265V517" fill="none" stroke="#687c91" stroke-width="1.5"/><path d="M770 265l-4 10h8z M770 517l-4 -10h8z" fill="#687c91"/><text x="732" y="391" font-family="Inter,Arial,sans-serif" font-size="19" font-weight="600" fill="#163e55">60</text>
+<text x="800" y="620" font-family="Inter,Arial,sans-serif" font-size="18" font-weight="600" fill="#163e55">2 × Ø9   •   2 × Ø6.6   •   R5   •   t = 6</text>
+<text x="800" y="648" font-family="Inter,Arial,sans-serif" font-size="17" font-weight="400" fill="#163e55">Lock holes: (42.5,17) and (42.5,43)</text>
+<text x="800" y="675" font-family="Inter,Arial,sans-serif" font-size="17" font-weight="400" fill="#163e55">Payload hole pitch: 35</text>
+<path d="M70 714H1230" stroke="#a5bdca" stroke-width="2"/>
+<text x="94" y="753" font-family="Inter,Arial,sans-serif" font-size="18" font-weight="700" fill="#163e55">NOMINAL SLIDER TRAVEL</text>
+<text x="94" y="786" font-family="Inter,Arial,sans-serif" font-size="19" font-weight="400" fill="#163e55">±35.5 mm from centred position (overall 71 mm)</text>
+<text x="94" y="821" font-family="Inter,Arial,sans-serif" font-size="17" font-weight="400" fill="#163e55">M8 lock joints ×2 · EN AW-6082 T6 · analytical plate mass 0.4334 kg</text>
+<rect x="795" y="735" width="438" height="106" fill="#f1f7fa" stroke="#a5bdca"/>
+<text x="820" y="770" font-family="Inter,Arial,sans-serif" font-size="18" font-weight="700" fill="#163e55">STATUS: ORIGINAL DEMONSTRATION</text>
+<text x="820" y="803" font-family="Inter,Arial,sans-serif" font-size="16" font-weight="400" fill="#163e55">Not fabrication approved · not certified</text>
+<text x="820" y="828" font-family="Inter,Arial,sans-serif" font-size="15" font-weight="400" fill="#163e55">Drawing is illustrative. DXFs define profiles.</text>
+</svg>
