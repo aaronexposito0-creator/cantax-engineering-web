@@ -1,0 +1,48 @@
+{
+  "project": "MX-03",
+  "revision": "A",
+  "units": "mm",
+  "description": "Pivoting instrument deployment support, unverified concept",
+  "deckFrame": {
+    "length": 1250,
+    "width": 900,
+    "beamSection": [
+      80,
+      50,
+      5
+    ]
+  },
+  "pivot": {
+    "x": 220,
+    "y": 450,
+    "z": 300,
+    "pinNominalDiameter": 30
+  },
+  "arm": {
+    "length": 1600,
+    "outerSection": [
+      100,
+      60,
+      5
+    ],
+    "angleMinDeg": 12,
+    "angleMaxDeg": 65
+  },
+  "plate": {
+    "width": 200,
+    "height": 160,
+    "thickness": 12
+  },
+  "tipPositions": {
+    "stowed": [
+      1785,
+      632.7
+    ],
+    "deployed": [
+      896.2,
+      1750.1
+    ]
+  },
+  "environment": "Marine exposure expected; coating, corrosion category, galvanic isolation, wave loading and corrosion allowance to be engineered",
+  "validation": "Only 2D rigid-body kinematics / nominal geometry; no finite element analysis, torque selection, certification, physical testing, capacity or mass claim."
+}
