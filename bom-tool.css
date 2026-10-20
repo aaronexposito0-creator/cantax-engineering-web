@@ -1,0 +1,25 @@
+/* DT-04 client-side engineering change report */
+.bom-tool-page .page-hero{background:radial-gradient(circle at 85% 55%,#12425a,#071c2d 65%)}
+.bom-control-row{display:flex;flex-wrap:wrap;gap:12px;margin:22px 0 26px}
+.bom-control-row button:disabled{opacity:.53;cursor:not-allowed}
+.bom-inputs{display:grid;grid-template-columns:1fr 1fr;gap:24px}
+.bom-input-col{padding:23px;background:#f2f7f9;border:1px solid #ccdce4;display:flex;flex-direction:column;gap:12px}
+.bom-input-col h3{font-size:21px;margin:0;color:#0c3146}
+.bom-input-col label{font-size:13px;font-weight:700;color:#436270}
+.bom-input-col textarea{min-height:220px;width:100%;padding:16px;color:#163449;background:#fff;font-family:ui-monospace,SFMono-Regular,Consolas,monospace;font-size:12px;line-height:1.6;border:1px solid #afc6d1;resize:vertical}
+.bom-input-col textarea:focus-visible{outline:3px solid #0cb9a5;outline-offset:2px}
+.bom-upload{display:block;font-size:12px;cursor:pointer}
+.bom-upload input{display:block;margin-top:7px;max-width:100%}
+.bom-status{font-size:15px;background:#eaf5f5;padding:19px;border-left:4px solid #08a8a0}
+.bom-table-wrap{overflow-x:auto;border:1px solid #bcd1da;background:white}
+.bom-table{min-width:660px;margin:0}
+.bom-table td,.bom-table th{padding:12px 16px;font-size:13px}
+.bom-table td:first-child{font-family:Consolas,monospace;font-weight:700}
+.bom-added{background:#edfaef}
+.bom-removed{background:#fff2ef}
+.bom-modified{background:#fff9e6}
+.bom-disclaimer{font-size:13px;color:#5d7080;margin:18px 0 0;line-height:1.6}
+.bom-links{display:flex;flex-wrap:wrap;gap:16px}
+.bom-links a{padding:17px 20px;border:1px solid #b8d5de;background:white;font-weight:750;color:#0a4a64}
+.bom-links a:hover{border-color:#08a9a0}
+@media(max-width:720px){.bom-inputs{grid-template-columns:1fr}.bom-control-row .btn{width:100%;text-align:center}}
