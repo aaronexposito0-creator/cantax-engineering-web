@@ -32,6 +32,22 @@
     document.querySelectorAll('[data-filter]').forEach(x=>x.setAttribute('aria-pressed',String(x===b)));
     document.querySelectorAll('[data-category]').forEach(c=>c.classList.toggle('hidden-by-filter',val!=='all'&&!c.dataset.category.split(' ').includes(val)));
   }));
+  // Official CantaX Engineering LinkedIn page (public company ID).
+  const linkedinUrl='https://www.linkedin.com/company/146767950/';
+  document.querySelectorAll('.footer-col').forEach(col=>{
+    if(!col.querySelector('h4') || col.querySelector('h4').textContent.trim()!=='Work together')return;
+    if(col.querySelector('[data-cantax-linkedin]'))return;
+    const link=document.createElement('a');
+    link.href=linkedinUrl;link.target='_blank';link.rel='noopener noreferrer';
+    link.textContent='LinkedIn ↗';link.setAttribute('aria-label','CantaX Engineering on LinkedIn (opens new tab)');
+    link.dataset.cantaxLinkedin='';col.appendChild(link);
+  });
+  const contactGrid=document.querySelector('.contact-grid');
+  if(contactGrid && !contactGrid.querySelector('[data-cantax-linkedin]')){
+    const link=document.createElement('a');link.href=linkedinUrl;link.target='_blank';link.rel='noopener noreferrer';
+    link.textContent='Connect on LinkedIn ↗';link.dataset.cantaxLinkedin='';link.className='contact-address';
+    contactGrid.querySelector('.contact-tile:last-child')?.appendChild(link);
+  }
   const contact=String(window.CANTAX_CONTACT_EMAIL||'').trim();
   const valid=/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(contact);
   document.querySelectorAll('[data-contact-link]').forEach(a=>{
