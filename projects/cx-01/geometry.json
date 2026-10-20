@@ -1,0 +1,81 @@
+{
+  "base": {
+    "w": 180,
+    "h": 100,
+    "t": 8,
+    "r": 8,
+    "holes": [
+      [
+        20,
+        12
+      ],
+      [
+        160,
+        12
+      ],
+      [
+        20,
+        88
+      ],
+      [
+        160,
+        88
+      ]
+    ],
+    "holeD": 6.6,
+    "slots": [
+      [
+        90,
+        37
+      ],
+      [
+        90,
+        63
+      ]
+    ],
+    "slotLen": 80,
+    "slotW": 9
+  },
+  "slider": {
+    "w": 85,
+    "h": 60,
+    "t": 6,
+    "r": 5,
+    "lockHoles": [
+      [
+        42.5,
+        17
+      ],
+      [
+        42.5,
+        43
+      ]
+    ],
+    "payloadHoles": [
+      [
+        25,
+        30
+      ],
+      [
+        60,
+        30
+      ]
+    ],
+    "lockHoleD": 9,
+    "payloadHoleD": 6.6
+  },
+  "assembly": {
+    "sliderZero": [
+      47.5,
+      20
+    ],
+    "travel": 35.5,
+    "material": "EN AW-6082 T6",
+    "nominalDensity": 0.0027
+  },
+  "calculated": {
+    "baseKg": 0.3543,
+    "sliderKg": 0.0791
+  },
+  "notice": "Preliminary geometry for demonstration; dimension reference is defined by exact CAD source/DXF; not load-rated or certified."
+}
