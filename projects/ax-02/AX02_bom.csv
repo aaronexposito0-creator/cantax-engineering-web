@@ -1,0 +1,10 @@
+ID,Description,Quantity,Proposed material/spec,Status
+AX02-001,Base plate 320x180x16,1,EN AW-6082 T6,Concept geometry
+AX02-002,Carriage plate 130x150x12,1,EN AW-6082 T6,Concept geometry
+AX02-003,Guide rod 12x260 nominal,2,Steel rod diameter nominal,Catalogue selection required
+AX02-004,Guide bushings/supports,4,Compatible with selected rod,Catalogue selection required
+AX02-005,End support bracket,4,Provisional block geometry,Not qualified for fabrication
+AX02-006,Lead screw 12 nominal pitch 4,1,Provisional shaft geometry,Lead specification unverified
+AX02-007,Screw nut assembly,1,Provisional nut housing,Not qualified for fabrication
+AX02-008,Thrust bearing assembly,2,Undetermined,Catalogue selection required
+AX02-009,Stop and retaining hardware,1 set,Undetermined,Must design before use
