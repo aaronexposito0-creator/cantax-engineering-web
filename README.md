@@ -117,3 +117,20 @@ These are independent demonstrations, not fabricated products, commercially comm
 - Airtable base **CantaX Engineering | International Pipeline** holds 30 distinct targets. **No outreach messages were sent** in this work session.
 
 **Deployment note:** GitHub Pages has publishing build quotas and can serve stale site versions until processing catches up; only repository source code has been fully inspected, not every published page/browser path end to end.
+
+## Fifth demonstration: TS-05 (20 October 2026)
+
+- **[Try TS-05 Tolerance Stack-up Explorer](ts05.html)** — signed 1D dimension chain; exact worst-case interval; reproducible modelled uniform-error Monte Carlo simulation; histogram and CSV export.
+- **[Technical method and exclusions](projects/ts-05/README.md)** · **[Logic tests](projects/ts-05/tests.js)** · **[Source JavaScript](ts05.js)**.
+- A GitHub Actions workflow in [engineering-qa.yml](.github/workflows/engineering-qa.yml) tests TS-05, DT-04 and the three CAD verification scripts on pushes. Its 20 October 2026 run completed successfully.
+- TS-05 is an independent interactive study, **not a validated manufacturing/process-capability report**.
+
+## First five account-specific B2B approaches (unsent)
+
+- [Targeted technical pilot offers, evidence links and three personalized email drafts](business-development/priority-5-outreach-2026-10-20.md).
+- Airtable now records public business email, source URL, small prospective pilot scope and contact-compliance gate on the five first-pass accounts.
+- The linked Gmail account is personal rather than the intended CantaX business sender. No email has been sent. These drafts remain in repository text until appropriate business account, legal channel and buyer relevance are reviewed.
+
+### Commercial launch blockers remain
+
+GitHub Pages is only the temporary **technical portfolio preview**, not the business hosting solution. Choose approved commercial hosting and review relevant legal/privacy notices before treating it as an operating business website. Also test the intended recipient of the Web3Forms enquiry flow end-to-end before enabling direct submissions; the delivery gate intentionally stays false. Confirm applicable tax/invoicing and contract terms before paid work.
