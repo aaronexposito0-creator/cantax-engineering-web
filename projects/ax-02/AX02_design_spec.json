@@ -1,0 +1,47 @@
+{
+  "project": "AX-02",
+  "revision": "A",
+  "units": "mm",
+  "status": "original concept study; no FEA, physical testing or supplier validation",
+  "base": {
+    "x": 320,
+    "y": 180,
+    "z": 16
+  },
+  "rails": {
+    "quantity": 2,
+    "diameter": 12,
+    "fromX": 30,
+    "toX": 290,
+    "centerY": [
+      44,
+      136
+    ],
+    "axisZ": 36
+  },
+  "screw": {
+    "diameterNominal": 12,
+    "pitchNominal": 4,
+    "axisY": 90,
+    "axisZ": 36,
+    "runX": 30,
+    "runLength": 260
+  },
+  "carriage": {
+    "x": 130,
+    "y": 150,
+    "z": 12,
+    "centerY": 90,
+    "bottomZ": 55,
+    "centreX": 160,
+    "travel": 48
+  },
+  "geometry": {
+    "minCentreX": 112,
+    "maxCentreX": 208,
+    "fullTravel": 96,
+    "screwTurnsFullTravel": 24
+  },
+  "materials": "base and carriage assumed EN AW-6082 T6; rails and screw stainless or hardened steel subject to actual sizing",
+  "note": "Geometric concept only. Clearances for bearings, block preload, screw support, load ratings, backlash and tolerance stack not analysed."
+}
