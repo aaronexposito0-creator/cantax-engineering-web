@@ -59,8 +59,8 @@ Workers & Pages → Create → Pages → Connect to Git
 Repository: aaronexposito0-creator/cantax-engineering-web
 Production branch: main
 Framework: None / static HTML
-Build command: (leave blank)
-Build output directory: /
+Build command: exit 0
+Build output directory: . (repository root, where index.html exists)
 ```
 Follow Cloudflare's current interface for any renamed fields. Once you have a new `*.pages.dev` URL, update LinkedIn and website canonical/share references as needed.
 
@@ -95,6 +95,25 @@ Do not commit secrets, API credentials, customer files or internal company drawi
 
 ## International account research
 
-- Eight initial accounts are recorded as **researched, not contacted** in Airtable base **CantaX Engineering | International Pipeline**.
+- Thirty initial accounts are recorded as **researched, not contacted** in Airtable base **CantaX Engineering | International Pipeline**.
 - A broader original target shortlist is also in [business-development/international-targets.md](business-development/international-targets.md).
 - No unsolicited messages, LinkedIn follows or claims of commercial clients have been made in this work session.
+
+## Four independently inspectable portfolio demonstrations
+
+- **CX-01**: [adjustable mounting fixture](cx01.html), OpenSCAD source + 2D DXF, geometry, reference drawing and BOM.
+- **AX-02**: [two-rail screw-driven positioning concept](ax02.html), OpenSCAD model, ideal lead-screw kinematics, component list, JSON specification and consistency checks.
+- **MX-03**: [marine pivoting instrument mount](mx03.html), OpenSCAD motion concept, kinematic envelope, part register and explicit marine design risks.
+- **DT-04**: [working BOM Revision Auditor](bom-tool.html), local-only CSV comparison, readable JavaScript, sample datasets and unit tests. No network transmission from the tool.
+
+These are independent demonstrations, not fabricated products, commercially commissioned designs, validated production drawings or engineering certifications. AX-02 and MX-03 geometry checks are **not** verification of loads, fatigue, clearances of real purchased components or tolerances.
+
+## Go-to-market preparation
+
+- [Deployment and legal readiness checklist](DEPLOYMENT.md).
+- [International pipeline: 30 research targets](business-development/targets-30.csv).
+- [Four-week controlled outreach plan](business-development/launch-plan.md).
+- [Three human-review email templates and launch post](business-development/outreach-drafts.md).
+- Airtable base **CantaX Engineering | International Pipeline** holds 30 distinct targets. **No outreach messages were sent** in this work session.
+
+**Deployment note:** GitHub Pages has publishing build quotas and can serve stale site versions until processing catches up; only repository source code has been fully inspected, not every published page/browser path end to end.
