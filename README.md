@@ -31,7 +31,7 @@ Then visit `http://localhost:8000/`.
 
 The `brief.html` wizard offers four routes:
 
-1. **Send enquiry online** — disabled by default. Web3Forms may be activated only after the owner registers the public access key and verifies the resulting email to CantaX. Free plan currently advertises 250 submissions/month; limits and terms may change.
+1. **Send enquiry online** — **HIDDEN / BLOCKED** because real inbox delivery has not been verified. The public Web3Forms access key is configured but `CANTAX_WEB3FORMS_DELIVERY_VERIFIED = false` is the required safety gate. Enable only after actual inbox receipt and checking the intended destination. Free tier currently advertises 250 requests/month; conditions may change.
 2. **Open email app** — constructs a `mailto:` draft; the visitor must still send it.
 3. **Copy enquiry** — clipboard only.
 4. **Download .txt** — local file only.
@@ -41,9 +41,9 @@ The web site itself has no server database or file-upload mechanism. Do not ask 
 ### One-time Web3Forms setup
 
 1. The inbox owner goes to https://web3forms.com/ and requests a free access key for `cantaxengineering@gmail.com`. This requires a message sent to the inbox.
-2. Once received, add the **public** key to `window.CANTAX_WEB3FORMS_ACCESS_KEY` in `site-config.js` and push to GitHub. The web app will then display the online-send option.
-3. Use test details with no sensitive or third-party information and submit once. Check both Web3Forms response and actual inbox receipt. If nothing arrives, **disable the online option again** while diagnosing.
-4. Confirm that production website legal notices and GDPR documentation accurately describe the external provider.
+2. The public key is already in `site-config.js`; confirm the intended recipient email and verify that Web3Forms stores and actually forwards the trial request.
+3. Perform a test using the provider's dashboard test facility with only fictional details. Check both Web3Forms submission records and actual receipt at cantaxengineering@gmail.com. **Do not enable the website button if no message arrives.**
+4. Only after successful end-to-end delivery, set `CANTAX_WEB3FORMS_DELIVERY_VERIFIED = true`, deploy and do another live-website test. Confirm Spanish/EU legal notices and GDPR documentation.
 
 Until tested, only the existing email-app link is known to open a draft successfully; no direct online delivery is guaranteed.
 
@@ -85,3 +85,16 @@ Do not commit secrets, API credentials, customer files or internal company drawi
 - Verify the end-to-end enquiry flow.
 
 © 2026 CantaX Engineering — independent project.
+
+## Engineering case study: CX-01 (Revision A)
+
+- Public technical presentation: [CX-01](cx01.html)
+- Technical source package: [projects/cx-01/](projects/cx-01/README.md)
+- OpenSCAD configurable geometry, machine-readable DXF outlines, dimensional SVG reference, BOM and analytical geometry checks.
+- Preliminary concept only: dimensions/geometric constraints are documented; physical clearance, structural loading, fabrication tolerances and prototype fit are **not tested or certified**.
+
+## International account research
+
+- Eight initial accounts are recorded as **researched, not contacted** in Airtable base **CantaX Engineering | International Pipeline**.
+- A broader original target shortlist is also in [business-development/international-targets.md](business-development/international-targets.md).
+- No unsolicited messages, LinkedIn follows or claims of commercial clients have been made in this work session.
